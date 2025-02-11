@@ -1,0 +1,4 @@
+### 上传文件
+POST http://localhost:8080/upload
+Content-Type: multipart/form-data
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJUVFRJSUkiLCJpYXQiOjE3Mzg0NzM1MzYsImV4cCI6MTczODU1OTkzNn0.ndXcw3phIQwUnTKPqYzeyxXYu5S-uU6ThVthPhXgFcM

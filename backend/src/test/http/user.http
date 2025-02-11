@@ -1,0 +1,53 @@
+### 注册
+POST http://localhost:8080/api/user/register
+Content-Type: application/json
+
+{
+  "username": "TTTest11",
+  "password": "123456"
+}
+
+### 注册
+POST http://47.93.166.101:10511/user/register
+Content-Type: application/json
+
+{
+  "username": "TTTest2",
+  "password": "123456",
+  "repassword": "123456"
+}
+
+### 获取用户信息
+GET http://localhost:8080/user/userinfo
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJUVFRJSUkiLCJpYXQiOjE3Mzg0MTg2MjksImV4cCI6MTczODUwNTAyOX0.xTNQNLPtoDGB_ocOTrMp-gfaSISXG4K5DdkKGe6HDIw
+
+
+### 更新用户基本信息
+PUT http://localhost:8080/user/update
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJUVFRJSUkiLCJpYXQiOjE3Mzg0MTg2MjksImV4cCI6MTczODUwNTAyOX0.xTNQNLPtoDGB_ocOTrMp-gfaSISXG4K5DdkKGe6HDIw
+Content-Type: application/json
+
+{
+  "id": 2,
+  "nickname": "ST",
+  "email": "TI@163.com"
+}
+
+### 更新用户头像
+PATCH http://localhost:8080/user/updateAvatar?avatar=@/path/to/avatar.jpg
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJUVFRJSUkiLCJpYXQiOjE3Mzg0MTg2MjksImV4cCI6MTczODUwNTAyOX0.xTNQNLPtoDGB_ocOTrMp-gfaSISXG4K5DdkKGe6HDIw
+#Content-Type: application/x-www-form-urlencoded
+
+
+
+
+### 更新用户密码
+PATCH http://localhost:8080/user/updatePwd
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJUVFRJSUkiLCJpYXQiOjE3Mzg0MTg2MjksImV4cCI6MTczODUwNTAyOX0.xTNQNLPtoDGB_ocOTrMp-gfaSISXG4K5DdkKGe6HDIw
+Content-Type: application/json
+
+{
+  "old_pwd":"123456",
+  "new_pwd":"1234567",
+  "re_pwd":"1234567"
+}

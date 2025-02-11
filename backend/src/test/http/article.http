@@ -1,0 +1,17 @@
+### 添加文章
+POST http://localhost:8080/article
+Content-Type: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJUVFRJSUkiLCJpYXQiOjE3Mzg0NzM1MzYsImV4cCI6MTczODU1OTkzNn0.ndXcw3phIQwUnTKPqYzeyxXYu5S-uU6ThVthPhXgFcM
+
+{
+  "title": "山西旅游攻略",
+  "content": "兵马俑,华清池,法门寺,华山...爱去哪去哪...",
+  "coverImg": "https://big-event-gwd.oss-cn-beijing.aliyuncs.com/9bf1cf5b-1420-4c1b-91ad-e0f4631cbed4.png",
+  "state": "已发布",
+  "categoryId": 2
+}
+
+### 文章列表(条件分页)
+GET http://localhost:8080/article?pageNum=1&pageSize=1&categoryId=2&state=草稿
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJUVFRJSUkiLCJpYXQiOjE3Mzg0NzM1MzYsImV4cCI6MTczODU1OTkzNn0.ndXcw3phIQwUnTKPqYzeyxXYu5S-uU6ThVthPhXgFcM
+

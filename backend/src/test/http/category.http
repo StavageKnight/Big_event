@@ -1,0 +1,31 @@
+### 新建文章分类
+POST http://localhost:8080/category
+Content-Type: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJUVFRJSUkiLCJpYXQiOjE3Mzg0NzM1MzYsImV4cCI6MTczODU1OTkzNn0.ndXcw3phIQwUnTKPqYzeyxXYu5S-uU6ThVthPhXgFcM
+
+{
+  "categoryName": "数学",
+  "categoryAlias": "math"
+}
+
+### 查询文章分类
+GET http://localhost:8080/category
+Content-Type: application/json
+#token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJUVFRJSUkiLCJpYXQiOjE3Mzg0NzM1MzYsImV4cCI6MTczODU1OTkzNn0.ndXcw3phIQwUnTKPqYzeyxXYu5S-uU6ThVthPhXgFcM
+
+
+### 获取文章分类详情
+GET http://localhost:8080/category/detail?id=1
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJUVFRJSUkiLCJpYXQiOjE3Mzg0NzM1MzYsImV4cCI6MTczODU1OTkzNn0.ndXcw3phIQwUnTKPqYzeyxXYu5S-uU6ThVthPhXgFcM
+
+
+### 更新文章分类
+PUT http://localhost:8080/category
+Content-Type: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJUVFRJSUkiLCJpYXQiOjE3Mzg0NzM1MzYsImV4cCI6MTczODU1OTkzNn0.ndXcw3phIQwUnTKPqYzeyxXYu5S-uU6ThVthPhXgFcM
+
+{
+  "id": 2,
+  "categoryName": "风土人情",
+  "categoryAlias": "ftrq"
+}
